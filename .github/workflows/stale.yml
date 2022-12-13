@@ -21,7 +21,7 @@ jobs:
     - uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        stale-issue-message: 'Beware: Stale issue message'
-        stale-pr-message: 'Beware: Stale pull request message'
+        stale-issue-message: 'Beware: The issue is stale'
+        stale-pr-message: 'Beware: The pull request is stale'
         stale-issue-label: 'no-issue-activity'
         stale-pr-label: 'no-pr-activity'
