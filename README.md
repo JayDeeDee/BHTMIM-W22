@@ -13,6 +13,9 @@ Assignments for the course in the master's degree program in media informatics a
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg??style=flat-square&logo=appveyor&logo=github&logoColor=white)
 
 [comment]: <> (content)
-## Table of contents
 
 ## List of assignments
+### Clean Code Development
+a) [ Cheat Cheet](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/a/clean-code_cheat-sheet.md)
+
+b) [Originalcode aus dem Miroboard der Vorlesung](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/b/original-code.js) | [Cleaner Code nach Refactoring](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/b/jquery.cleanercode.js) | [Description [German]](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/b/beschreibung.md)
