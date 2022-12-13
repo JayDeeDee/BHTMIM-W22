@@ -16,6 +16,13 @@ Assignments for the course in the master's degree program in media informatics a
 
 ## List of assignments
 ### Clean Code Development
-a) [ Cheat Cheet](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/a/clean-code_cheat-sheet.md)
+a) Create a cheat sheet for clean code development!
+* [cheat sheet](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/a/clean-code_cheat-sheet.md)
 
-b) [Originalcode aus dem Miroboard der Vorlesung](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/b/original-code.js) | [Cleaner Code nach Refactoring](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/b/jquery.cleanercode.js) | [Description [German]](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/b/beschreibung.md)
+b) Refactor one third of the source code from the miro board according to the rules and principles of clean code development, describe what you are doing and why!
+* [original code](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/b/original-code.js) from [Miro](https://miro.com/app/board/o9J_lkG-PtE=/)
+* [cleaner code after refactoring](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/b/jquery.cleanercode.js) 
+* [description [German]](https://github.com/JayDeeDee/BHTMIM-W22/blob/main/CCD/b/beschreibung.md)
+
+### Git 
+Create a repository in Github or GitLab. Apply all relevant methods mentioned in the documentation in a provable way: push, pull, add, commit, diff, status, rm/mv ...
