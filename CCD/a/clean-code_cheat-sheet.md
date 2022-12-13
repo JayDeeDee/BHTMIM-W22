@@ -39,15 +39,15 @@ Why should I use it?
   
 * **Grade 2 Orange**:
   * **Principles**:
-    * Single Level of Abstraction (SLA)
-    * Single Responsibility Principle (SRP)
-    * Separation of Concerns (SoC)
-    * Source Code Conventions
+    * Single Level of Abstraction (SLA): _Keeping one level of abstraction fosters readability._
+    * Single Responsibility Principle (SRP): _Focus eases understanding. A class having exactly one task is easier to understand than a convenience store._
+    * Separation of Concerns (SoC): _If a code unit does not have a clear purpose, it will be difficult to understand, difficult to use, difficult to enhance and difficult to correct._
+    * Source Code Conventions: _Code is more frequently read than written. Accordingly conventions are important to support reading and conceive code quickly._
   * **Practices**
-    * Issue Tracking
-    * Automatized Integration Tests
-    * Read, Read, Read
-    * Reviews
+    * Issue Tracking: _Only written issues are not forgotten and can be efficiently followed-up or delegated._
+    * Automatized Integration Tests: _Integration tests ensure the code does what it shall do. It would be a waste of time to do this repetitive activity manually._
+    * Read, Read, Read: _Software technology evolves permanently, so does clean coding!_
+    * Reviews: _Four eyes will see more than two eyes. Explaining own code to a fellow developer frequently reveals details which were not considered yet._
   
 * **Grade 3 Yellow**:
   * **Principles**
