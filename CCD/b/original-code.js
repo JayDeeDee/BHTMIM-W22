@@ -43,7 +43,7 @@ $(document).on('click', '.check_district_li', function() {
             var selected_sectors = $("#sector_id").val();
             var result = selected_sectors.split(',');
             for (i = 0; i < result.length; ++i) {
-                $(".loaded_sectors_span_") + result[i]).addClass('sector_checked');
+                $(".loaded_sectors_span_" + result[i]).addClass('sector_checked');
                 $('img', ".loaded_sectors_span_" + result[i]).attr("src", "/images/sector_bubble_close.png");
             }
         });
