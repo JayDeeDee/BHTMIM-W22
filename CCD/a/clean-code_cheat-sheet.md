@@ -77,14 +77,14 @@ Why should I use it?
 
 * **Grade 5 Blue**
   * **Principles**
-      * Design and Implementation don’t overlap: __
-      * Implementation reflects Design: __
-      * You Ain´t Gonna Need It (YAGNI): __
+      * Design and Implementation don’t overlap: _Design papers provide more damage than benefit if they have nothing in common with the implementation. Hence minimize risks for inconsistencies._
+      * Implementation reflects Design: _Implementation deviating from design as you chose leads to no longer maintainable software. Implementation needs a physical frame given by design._
+      * You Ain´t Gonna Need It (YAGNI): _Stuff which not used by anyone has no value. Do not spend any time on it._
   * **Practices**
-    * Continuous Delivery: __
-    * Iterative Development: __
-    * Component Orientation: __
-    * Test first: __
+    * Continuous Delivery: _Make sure the product becomes installed correctly._
+    * Iterative Development: _As customer requirements can change software development would be wise to be able to adopt its course._
+    * Component Orientation: _Software needs black-box-building-blocks which can be developed and tested in parallel._
+    * Test first: _Customer is king and defines the shape of a service. Service implementations will fit only well, if these are driven by a client._
   
 * **Grade 6 White**
   * incorporates all principles and practices. 
