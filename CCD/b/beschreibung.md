@@ -147,7 +147,7 @@ Um das Testing aber zumindest zu vereinfachen, wurde eine Hilfsfunktion für das
 
 Der Quellcode ist im aktuellen Stand des Refactorings leider noch kein Clean Code, er ist nur "cleaner".
 Ein Großteil der Programmlogik ist ohne Kenntnis des Markups nicht nachvollziehbar und damit auch schwer refaktorierbar.
-Der Code enthält Hinweise auf die Objekte City, Division, District und Sector ohne, dass die ihnen zugrundeliegenden Konzepte und die zwischen ihnen bestehenden Beziehungen zu verdeutlichen.
+Der Code enthält Hinweise auf die Objekte City, Division, District und Sector ohne, dass die ihnen zugrundeliegenden Konzepte und die zwischen ihnen bestehenden Beziehungen verdeutlicht werden.
 Der originale JavaScript-Code enthielt dazu keine erläuternde Kommentare.
 
 Die nächsten Schritte des Refactorings müssten umschließen:
