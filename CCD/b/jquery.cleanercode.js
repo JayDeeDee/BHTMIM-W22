@@ -24,10 +24,9 @@ if (typeof jQuery === 'function') {
 	 * in loops are executed correctly.
 	 *
 	 * @param {jQuery} $ 		Alias for jQuery
-	 * @param {Object} win 		Browser window object
 	 * @param {Object} options	Options for overwriting settings
      */
-    (function ($, win, options) {
+    (function ($, options) {
 		'use strict';
 
 		// default settings
@@ -207,7 +206,7 @@ if (typeof jQuery === 'function') {
 		});
 
 
-    })(jQuery, window, options);
+    })(jQuery, options);
 
 } else {
 	log('jQuery is missing');
