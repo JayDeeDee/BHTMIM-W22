@@ -51,17 +51,17 @@ Why should I use it?
   
 * **Grade 3 Yellow**:
   * **Principles**
-    * Interface Segregation Principle (ISP)
-    * Dependency Inversion Principle (DIP)
-    * Liskov Substitution Principle
-    * Principle of Least Astonishment
-    * Information Hiding Principle
+    * Interface Segregation Principle (ISP): _A service description that is independent from concrete implementation generates liberties._
+    * Dependency Inversion Principle (DIP): _Class isolation is a prerequisite for testing to the point. Isolation is when classes receive no more implementation dependencies – neither at compile time nor at runtime. Concrete dependencies shall be decided on as late as possible. Ideally at runtime._
+    * Liskov Substitution Principle: _Avoid surprises with the heirs if you are familiar with the testator._
+    * Principle of Least Astonishment: _If a component behaves surprisingly different than expected, your application will become unnecessarily complex and error prone._
+    * Information Hiding Principle: _Hiding details in an interface reduces dependencies._
   * **Practices**
-    * Automatized Unit Tests
-    * Mockups (Testdummies)
-    * Code Coverage Analyse
-    * Participation in Professional Events
-    * Complex Refactorings
+    * Automatized Unit Tests: _Only automatized tests are really executed in a consequent manner. The more accurate unit test verify code the better._
+    * Mockups (Testdummies): _Mockups make controllable tests possible._
+    * Code Coverage Analyse: _Only believe in tests you know they really cover the test area._
+    * Participation in Professional Events: _Best way to learn is from others and in company._
+    * Complex Refactorings: _It is not possible to write code in an ultimate form._
   
 * **Grade 4 Green**
     * **Principles**
