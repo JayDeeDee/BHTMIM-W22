@@ -65,26 +65,26 @@ Why should I use it?
   
 * **Grade 4 Green**
     * **Principles**
-      * Open Closed Principle
-      * Tell, don´t ask
-      * Law of Demeter
+      * Open Closed Principle: _Keep the risk as low as possible to destabilize a system by adding new features._
+      * Tell, don´t ask: _High cohesion and loose coupling are virtues. Public state details in a class contradict those._
+      * Law of Demeter: _Object dependencies over multiple service chain elements lead to unpleasantly close coupling.
     * **Practices**
-      * Continuous Integration
-      * Static Code Analysis (Metrics)
-      * Inversion of Control Container
-      * Share Experience
-      * Error Measurement 
+      * Continuous Integration: _Automatisation of centralization of software production increase productivity and reduce risk_
+      * Static Code Analysis (Metrics): _Trust, but verify. Nevertheless there are measurable metrics for software. There is support by tools which should be used in any software project._
+      * Inversion of Control Container: _It is easier to configure things which are not hard-wired._
+      * Share Experience: _Sharing your experience helps others and yourself._
+      * Error Measurement: _You will only be able to reduce the error rate, if you first-hand know how many errors occur and adopt your approach accordingly._
 
 * **Grade 5 Blue**
   * **Principles**
-      * Design and Implementation don’t overlap 
-      * Implementation reflects Design
-      * You Ain´t Gonna Need It (YAGNI)
+      * Design and Implementation don’t overlap: __
+      * Implementation reflects Design: __
+      * You Ain´t Gonna Need It (YAGNI): __
   * **Practices**
-    * Continuous Delivery
-    * Iterative Development
-    * Component Orientation
-    * Test first
+    * Continuous Delivery: __
+    * Iterative Development: __
+    * Component Orientation: __
+    * Test first: __
   
 * **Grade 6 White**
   * incorporates all principles and practices. 
