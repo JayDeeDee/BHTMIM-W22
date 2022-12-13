@@ -1,0 +1,22 @@
+{
+  "name": "bhtmim-w22",
+  "version": "0.0.1",
+  "description": "Assignments for the course in the master's degree program in media informatics at the BHT Berlin",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayDeeDee/BHTMIM-W22.git"
+  },
+  "author": "Jana Deutschlaender",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JayDeeDee/BHTMIM-W22/issues"
+  },
+  "homepage": "https://github.com/JayDeeDee/BHTMIM-W22#readme",
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  }
+}
