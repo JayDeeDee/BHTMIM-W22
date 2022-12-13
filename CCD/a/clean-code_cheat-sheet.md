@@ -21,21 +21,21 @@ reason for this is that the developer changing the code cannot fully comprehend 
 
 
 ## Belts with all Principles and Practices 
+Why should I use it?
 * **Grade 0 Black**: readiness to become a CCD. There is not yet daily reflection involved concerning the CCD values
-
 * **Grade 1 Red**:
   * **Principles**:
-    * Don’t Repeat Yourself (DRY)
-    * Keep it simple, stupid (KISS)
-    * Beware of Optimizations!
-    * Favour Composition over Inheritance (FCoI)
-    * Integration Operation Segregation Principle (IOSP)
+    * Don’t Repeat Yourself (DRY): _Every duplication of both code and manual tasks fosters inconsistencies and mistakes._
+    * Keep it simple, stupid (KISS): _Doing more than the obvious keeps customers waiting and complicates solutions unnecessarily._
+    * Beware of Optimizations!: _Optimizations cost effort. Being aware of that often saves precious capacity for stuff the customer really benefits from._
+    * Favour Composition over Inheritance (FCoI): _Composition promotes loose coupling and more flexible testability of a system._
+    * Integration Operation Segregation Principle (IOSP): _A broad symptom of code which is hard to change are deep hierarchies of functional dependencies. The decrease understandability and hamper both automatized tests and refactoring._
   * **Practices**:
-    * Boy Scout Rule
-    * Root Cause Analysis
-    * Version Control
-    * Simple Refactoring Patterns
-    * Daily Reflection
+    * Boy Scout Rule: _Every time you work on some code it may get a little bit better. Without bureaucratic planning._
+    * Root Cause Analysis: _While eliminating symptoms brings quick relief, it costs more effort in the long run. You will be more efficient, if you have a look under the surface of problems._
+    * Version Control: _Being afraid of damaging a running system paralyzes software development. Using version control that fear is obsolete and development can progress quickly and bravely._
+    * Simple Refactoring Patterns: _Improving code is easier if you know typical improvement patterns. Their usage scenarios sensitize for weaknesses in self-written code. As accepted patterns they encourage to be applied._
+    * Daily Reflection: _There is no improvement, no progress, no learning without Reflection. But only if reflection is on the schedule, it will happen under daily business pressure._
   
 * **Grade 2 Orange**:
   * **Principles**:
