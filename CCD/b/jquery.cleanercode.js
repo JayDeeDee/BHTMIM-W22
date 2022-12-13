@@ -104,7 +104,7 @@ if (typeof jQuery === 'function') {
 		};
 
 		/**
-		 * sets the new city headline text removes
+		 * sets the new city headline text
 		 * @param {jQuery} $districtElement
 		 */
 		let setCityHeadline = function($districtElement) {
@@ -119,7 +119,7 @@ if (typeof jQuery === 'function') {
 		};
 
 		/**
-		 *
+		 * changes the state of an $districtElement to active and checked = true or inactive and checked = false
 		 * @param {jQuery} $districtElement
 		 * @param {boolean} setActive
 		 */
