@@ -1,0 +1,3 @@
+[submodule "Buildmanagement"]
+	path = Buildmanagement
+	url = https://github.com/JayDeeDee/BHTMIM-W22-Sub
