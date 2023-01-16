@@ -1,11 +1,16 @@
 // Load express as CommonJS module
 const express = require('express');
+// Load ServiceRegistry Class as CommonJS module
+const ServiceRegistry = require('./libs/ServiceRegistry');
 // Top-level func to create express app
 const service = express();
 // const ServiceRegistry = require('./ServiceRegistry');
 
 module.exports = (config) => {
   const log = config.log();
+  // add instance of ServiceRegistry
+  const serviceRegistry = new ServiceRegistry(log);
+
   // Add a request logging middleware in development mode
   if (service.get('env') === 'development') {
     service.use((req, res, next) => {
@@ -16,17 +21,30 @@ module.exports = (config) => {
 
   // REST API: get service
   service.get('/register/:servicename/:serviceversion/', (req, res, next) => {
-    return next('Service is not implemented.');
+    log.debug('get');
+    return next('not implemented.');
   });
 
-  // REST API: put service
-  service.put('/register/:servicename/:serviceversion/:serviceport', (req, res, next) => {
-    return next('Service is not implemented.');
+  // REST API: put for registering service
+  service.put('/register/:servicename/:serviceversion/:serviceport', (req, res) => {
+    const { servicename, serviceversion, serviceport } = req.params;
+    // if ip6 use proper notation
+    const serviceip = req.connection.remoteAddress.includes('::') ? `[${req.connection.remoteAddress}]` : req.connection.remoteAddress;
+    const servicekey = serviceRegistry
+      .register(servicename, serviceversion, serviceip, serviceport);
+
+    return res.json({ result: servicekey });
   });
 
   // REST API: delete service
-  service.delete('/register/:servicename/:serviceversion/:serviceport', (req, res, next) => {
-    return next('Service is not implemented.');
+  service.delete('/register/:servicename/:serviceversion/:serviceport', (req, res) => {
+    const { servicename, serviceversion, serviceport } = req.params;
+    // if ip6 use proper notation
+    const serviceip = req.connection.remoteAddress.includes('::') ? `[${req.connection.remoteAddress}]` : req.connection.remoteAddress;
+    const servicekey = serviceRegistry
+      .unregister(servicename, serviceversion, serviceip, serviceport);
+
+    return res.json({ result: servicekey });
   });
 
   // eslint-disable-next-line no-unused-vars

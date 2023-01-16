@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-
+// Load http as CommonJS module
 const http = require('http');
+// Load app config as CommonJS module
 const config = require('../config')[process.env.NODE_ENV || 'development'];
 
 const log = config.log();
