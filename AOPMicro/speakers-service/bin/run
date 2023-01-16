@@ -16,10 +16,36 @@ server.listen(0);
 server.on('listening', () => {
   // helper func to register speaker service in service registry with REST API put request
   const registerService = () => axios.put(`http://localhost:3000/register/${config.name}/${config.version}/${server.address().port}`);
-  // call helper func
-  registerService();
+  // helper func to unregister speaker service in service registry with REST API put request
+  const unregisterService = () => axios.delete(`http://localhost:3000/register/${config.name}/${config.version}/${server.address().port}`);
 
+  // call helper func registerService and do it again every 20 seconds
+  registerService();
   const interval = setInterval(registerService, 20000);
+
+  // helper async func cleanup
+  const cleanup = async () => {
+    clearInterval(interval);
+    await unregisterService();
+  };
+
+  // handle exception: cleanup
+  process.on('uncaughtException', async () => {
+    await cleanup();
+    process.exit(0);
+  });
+
+  // handle Signal event Ctrl + C press: cleanup
+  process.on('SIGINT', async () => {
+    await cleanup();
+    process.exit(0);
+  });
+
+  // handle killed process event: cleanup
+  process.on('SIGTERM', async () => {
+    await cleanup();
+    process.exit(0);
+  });
 
   log.info(
     `listening on port ${server.address().port} in ${service.get('env')} mode.`,
