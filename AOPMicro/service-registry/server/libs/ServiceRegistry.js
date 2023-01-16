@@ -66,7 +66,7 @@ class ServiceRegistry {
     // use identifiable service key that was used to register service
     const key = name + version + ip + port;
     delete this.services[key];
-
+    this.log.debug(`ServiceRegistry: unregister service ${name} (version ${version} at ${ip}:${port})`);
     return key;
   }
 
