@@ -5,7 +5,7 @@ class ServiceRegistry {
   constructor(log) {
     this.log = log;
     this.services = {};
-    this.timeout = 30;
+    this.timeout = 10;
   }
 
   /**
@@ -15,6 +15,7 @@ class ServiceRegistry {
    * @returns candidate
    */
   get(name, version) {
+    this.cleanup();
     // versioning
     const candidates = Object.values(this.services)
       .filter(service => service.name === name && semver.satisfies(service.version, version));
@@ -31,6 +32,7 @@ class ServiceRegistry {
    * @returns service key
    */
   register(name, version, ip, port) {
+    this.cleanup();
     // store the service as identifiable key
     const key = name + version + ip + port;
 
@@ -66,6 +68,19 @@ class ServiceRegistry {
     delete this.services[key];
 
     return key;
+  }
+
+  /**
+   * deletes inactive services with timestamp older than timeout
+   */
+  cleanup() {
+    const now = Math.floor(new Date() / 1000);
+    Object.keys(this.services).forEach((key) => {
+      if (this.services[key].timestamp + this.timeout < now) {
+        delete this.services[key];
+        this.log.debug(`ServiceRegistry: remove inactive service ${key}`);
+      }
+    });
   }
 }
 
