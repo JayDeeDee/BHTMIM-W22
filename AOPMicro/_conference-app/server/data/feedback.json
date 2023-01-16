@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Ben Johnson",
+    "title": "Awesome Conference",
+    "message": "Best conference ever!"
+  },
+  {
+    "name": "Felix",
+    "title": "Tolles Event",
+    "message": "Ich liebe die Vorträge. Bitte nächstes Jahr wieder!"
+  },
+  {
+    "name": "Tina",
+    "title": "Zeitpunkt",
+    "message": "Bitte die Vortäge erst nach Schließung des Museums ansetzen, damit auch die Spätschicht mitmachen kann.."
+  },
+  {
+    "name": "Anja",
+    "title": "Großartige Vorträge",
+    "message": "Gerne nächstes Jahr ein paar mehr Präsentationen!"
+  }
+]

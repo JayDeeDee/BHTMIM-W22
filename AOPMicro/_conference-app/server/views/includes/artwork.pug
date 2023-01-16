@@ -1,0 +1,7 @@
+if artwork && artwork.length
+  h1.sidebar-title Ausgestellte Kunstwerke
+  p.sidebar-body
+    | unsere Galerie   ausgewählter   Kunstwerke.
+  .pixgrid.clearfix
+    each thumb, index in artwork
+      img(src=`/images/artwork/${thumb}`, alt=`Artwork ${index}`)

@@ -1,0 +1,48 @@
+{
+  "speakers": [
+    {
+      "title": "FRAGILE PRACHT. PORZELLANKUNST",
+      "name": "Dr. Thomas Rudi",
+      "shortname": "Thomas_Rudi",
+      "summary": "Sonderausstellung, Pfeilerhalle, 13.11.2021 bis 09.10.2022 (abgelaufen). Präsentiert wurden herausragende Porzellane des 18. und 19. Jahrhunderts aus der eigenen Sammlung. Dabei waren die bedeutendsten Manufakturen sowohl mit Geschirren als auch Figuren vertreten – aus der Zeit des Barock, Rokoko, Klassizismus und Biedermeier. Schwerpunkte waren frühe Porzellane der Manufaktur Meissen, der ersten Porzellanmanufaktur Europas, aber auch der Thüringer Manufakturen Gera, Gotha, Limbach, Kloster Veilsdorf, Volkstedt und Wallendorf. Erstmals wurden Porzellane der Meissener Manufaktur nach Pressglasvorlagen aus der ersten Hälfte des 19. Jahrhunderts vorgestellt.",
+      "description": "<p>Bedeutende Schenkungen der letzten Jahre ergänzten die Präsentation. So wurde im Jahr 2015 eine 330 Positionen umfassende Sammlung an kostbaren frühen Meissener Porzellanen mit Hoeroldt-Malereien erworben. Vier Jahre später erhielt das Museum eine Kollektion von 36 außergewöhnlich detailliert bemalten Tellern der Königlichen Porzellanmanufaktur Berlin aus einem botanischen Service, das für Kaiserin Joséphine von Frankreich von Napoleon Bonaparte in Auftrag gegeben worden war.</p>",
+      "artwork": [
+        "Thomas_Rudi_01_tn.jpg",
+        "Thomas_Rudi_02_tn.jpg",
+        "Thomas_Rudi_03_tn.jpg",
+        "Thomas_Rudi_04_tn.jpg"
+      ]
+    },
+    {
+      "title": "ASIATISCHE KUNST. IMPULSE FÜR EUROPA",
+      "name": "Philipp Walter Schulz",
+      "shortname": "Philipp_Walter_Schulz",
+      "summary": "Ostasiatische und islamische Einflüsse in der europäischen Kunst werden in der gesamten Ständigen Ausstellung verdeutlicht. Ein Kernbestand der Sammlung asiatischer Kunst des Museums wird auf der Galerie der Pfeilerhalle und in zwei von dort erreichbaren Kabinetten präsentiert. Das erste der beiden Kabinette ist vor allem der Lackkunst gewidmet. Zu den wichtigsten Stücken zählen ein zwölfteiliger, geschnitzter Lack-Stellschirm aus China und eine moderne Lackskulptur aus Japan. Darüber hinaus sind auch japanische Teezeremonie-Gefäße zu sehen.",
+      "description": "<p>Auf der Empore der Pfeilerhalle werden die chinesischen und japanischen keramischen Sammlungen gezeigt. Im Zentrum des westasiatischen Kabinetts stehen Objekte aus der bereits 1907 dem Museum geschenkten Sammlung des Leipzigers Philipp Walter Schulz – einer der ersten deutschen Forscher, der Persien bereiste.</p>",
+      "artwork": [
+        "Philipp_Walter_Schulz_01_tn.jpg",
+        "Philipp_Walter_Schulz_02_tn.jpg",
+        "Philipp_Walter_Schulz_03_tn.jpg",
+        "Philipp_Walter_Schulz_04_tn.jpg",
+        "Philipp_Walter_Schulz_05_tn.jpg",
+        "Philipp_Walter_Schulz_06_tn.jpg",
+        "Philipp_Walter_Schulz_07_tn.jpg"
+      ]
+    },
+    {
+      "title": "JUGENDSTIL BIS GEGENWART",
+      "name": "Riley Rudolph Rewington",
+      "shortname": "Riley_Rewington",
+      "summary": "Die Ständige Ausstellung „Jugendstil bis Gegenwart“ erstreckt sich über zwei Etagen. Im Obergeschoss führen drei große Themenschwerpunkte vom internationalen Jugendstil mit Spitzenstücken von der Pariser Weltausstellung 1900 zunächst zum Art déco mit seinen verschiedenen Ausprägungen. Es folgt die vom Funktionalismus bestimmte Moderne, die insbesondere durch das Bauhaus und sein Umfeld vertreten ist. Skandinavisches und deutsches Produktdesign der 1930er und 40er Jahre bildet den Abschluss im Obergeschoss.",
+      "description": "<p>Der Rundgang setzt sich im Erdgeschoss mit Design nach 1945 fort. Internationale Impulse, radikale Brüche, aber auch die noch immer lebendige Bauhaus-Tradition bestimmen die gestalterischen Tendenzen in den ersten Jahrzehnten nach dem Krieg. Ein zentrales Thema ist das Ringen um die „gute Form“ sowohl in Ost- als auch Westdeutschland.</p>",
+      "artwork": [
+        "Riley_Rewington_01_tn.jpg",
+        "Riley_Rewington_02_tn.jpg",
+        "Riley_Rewington_03_tn.jpg",
+        "Riley_Rewington_04_tn.jpg",
+        "Riley_Rewington_05_tn.jpg",
+        "Riley_Rewington_06_tn.jpg"
+      ]
+    }
+  ]
+}
