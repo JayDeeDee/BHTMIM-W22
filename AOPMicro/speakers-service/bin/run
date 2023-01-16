@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+// Load axios as CommonJS module
+const axios = require('axios');
 // Load http as CommonJS module
 const http = require('http');
 // Load app config as CommonJS module
@@ -10,8 +12,13 @@ const service = require('../server/service')(config);
 const server = http.createServer(service);
 
 // Important - a service should not have a fixed port but should randomly choose one
-server.listen(process.env.PORT || 3000);
+server.listen(process.env.PORT || 3001);
 server.on('listening', () => {
+  // helper func to register speaker service in service registry with REST API put request
+  const registerService = () => axios.put(`http://localhost:3000/register/${config.name}/${config.version}/${server.address().port}`);
+  // call helper func
+  registerService();
+
   log.info(
     `listening on port ${server.address().port} in ${service.get('env')} mode.`,
   );
