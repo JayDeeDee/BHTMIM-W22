@@ -20,9 +20,15 @@ module.exports = (config) => {
   }
 
   // REST API: get service
-  service.get('/register/:servicename/:serviceversion/', (req, res, next) => {
-    log.debug('get');
-    return next('not implemented.');
+  service.get('/find/:servicename/:serviceversion/', (req, res) => {
+    const { servicename, serviceversion } = req.params;
+    const currentservice = serviceRegistry.get(servicename, serviceversion);
+
+    if (!currentservice) {
+      return res.status(404).json({ result: 'Service not found' });
+    }
+
+    return res.json(currentservice);
   });
 
   // REST API: put for registering service

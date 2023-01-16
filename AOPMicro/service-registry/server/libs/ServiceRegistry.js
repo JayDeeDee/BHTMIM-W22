@@ -1,8 +1,25 @@
+// Load semver as CommonJS module
+const semver = require('semver');
+
 class ServiceRegistry {
   constructor(log) {
     this.log = log;
     this.services = {};
     this.timeout = 30;
+  }
+
+  /**
+   * get micro service
+   * @param {string} name name of the requested service
+   * @param {string} version version of the requested service
+   * @returns candidate
+   */
+  get(name, version) {
+    // versioning
+    const candidates = Object.values(this.services)
+      .filter(service => service.name === name && semver.satisfies(service.version, version));
+    // randomnes = load balancing light (if there are at least 2 candidates)
+    return candidates[Math.floor(Math.random() * candidates.length)];
   }
 
   /**
