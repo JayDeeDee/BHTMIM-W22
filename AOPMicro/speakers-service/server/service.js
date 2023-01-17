@@ -17,6 +17,8 @@ module.exports = (config) => {
     });
   }
 
+  service.use('/images/', express.static(config.data.images));
+
   // route for getting list of all speakers
   service.get('/list', async (req, res, next) => {
     try {

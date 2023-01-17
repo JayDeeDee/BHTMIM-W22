@@ -21,12 +21,11 @@ if (app.get('env') === 'development') {
 app.set('views', path.join(__dirname, './views'));
 app.locals.title = config.sitename;
 
-
 app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/favicon.ico', (req, res) => res.sendStatus(204));
+app.get('/favicon.ico', (req, res) => res.sendStatus(404));
 
 app.use(async (req, res, next) => {
   try {

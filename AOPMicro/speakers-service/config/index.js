@@ -1,4 +1,4 @@
-// Load buyan as CommonJS module
+// Load path as CommonJS module
 const path = require('path');
 // Load buyan as CommonJS module
 const bunyan = require('bunyan');
@@ -16,6 +16,7 @@ module.exports = {
     version,
     serviceTimeout: 30,
     data: {
+      images: path.join(__dirname, '../data/images'),
       speakers: path.join(__dirname, '../data/speakers.json'),
     },
     log: () => getLogger(name, version, 'debug'),
@@ -25,6 +26,7 @@ module.exports = {
     version,
     serviceTimeout: 30,
     data: {
+      images: path.join(__dirname, '../data/images'),
       speakers: path.join(__dirname, '../data/speakers.json'),
     },
     log: () => getLogger(name, version, 'info'),
@@ -34,6 +36,7 @@ module.exports = {
     version,
     serviceTimeout: 30,
     data: {
+      images: path.join(__dirname, '../data/images'),
       speakers: path.join(__dirname, '../data/speakers.json'),
     },
     log: () => getLogger(name, version, 'fatal'),
