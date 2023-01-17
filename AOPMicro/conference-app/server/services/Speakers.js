@@ -1,6 +1,10 @@
 /* eslint-disable class-methods-use-this */
 const axios = require('axios');
 
+const CircuitBreaker = require('../libs/CircuitBreaker');
+// global instance of ciucuit breaker;
+const circuitBreaker = new CircuitBreaker();
+
 class SpeakersService {
   constructor({ serviceRegistryUrl, serviceVersionIdentifier }) {
     this.serviceRegistryUrl = serviceRegistryUrl;
@@ -96,13 +100,12 @@ class SpeakersService {
   }
 
   /**
-   * helper func for service calls
+   * helper func for service calls with circuit breaker
    * @param {*} requestOptions given object literal with options
    * @returns response data of the request
    */
   async callService(requestOptions) {
-    const response = await axios(requestOptions);
-    return response.data;
+    return circuitBreaker.callService(requestOptions);
   }
 
   /**
