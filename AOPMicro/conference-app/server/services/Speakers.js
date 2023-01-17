@@ -1,14 +1,17 @@
 /* eslint-disable class-methods-use-this */
 const axios = require('axios');
+const crypto = require('crypto');
+const url = require('url');
 
 const CircuitBreaker = require('../libs/CircuitBreaker');
-// global instance of ciucuit breaker;
+// global instance of circuit breaker;
 const circuitBreaker = new CircuitBreaker();
 
 class SpeakersService {
   constructor({ serviceRegistryUrl, serviceVersionIdentifier }) {
     this.serviceRegistryUrl = serviceRegistryUrl;
     this.serviceVersionIdentifier = serviceVersionIdentifier;
+    this.cache = {};
   }
 
   /**
@@ -100,12 +103,26 @@ class SpeakersService {
   }
 
   /**
-   * helper func for service calls with circuit breaker
+   * helper func for service calls with circuit breaker and caching
    * @param {*} requestOptions given object literal with options
    * @returns response data of the request
    */
   async callService(requestOptions) {
-    return circuitBreaker.callService(requestOptions);
+    const servicePath = url.parse(requestOptions.url).path;
+    const cacheKey = crypto.createHash('md5').update(requestOptions.method + servicePath).digest('hex');
+    const result = await circuitBreaker.callService(requestOptions);
+
+    // if no result try to return cached result
+    if (!result) {
+      if (this.cache[cacheKey]) {
+        return this.cache[cacheKey];
+      }
+      return false;
+    }
+
+    this.cache[cacheKey] = result;
+
+    return result;
   }
 
   /**
