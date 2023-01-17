@@ -1,7 +1,11 @@
 /* eslint-disable class-methods-use-this */
 const axios = require('axios');
 const crypto = require('crypto');
+const fs = require('fs');
 const url = require('url');
+const util = require('util');
+
+const fsexists = util.promisify(fs.exists);
 
 const CircuitBreaker = require('../libs/CircuitBreaker');
 // global instance of circuit breaker;
@@ -110,6 +114,13 @@ class SpeakersService {
   async callService(requestOptions) {
     const servicePath = url.parse(requestOptions.url).path;
     const cacheKey = crypto.createHash('md5').update(requestOptions.method + servicePath).digest('hex');
+
+    let cacheImg = null;
+
+    if (requestOptions.responseType && requestOptions.responseType === 'stream') {
+      cacheImg = `${__dirname}/../../_imagecache/${cacheKey}`;
+    }
+
     const result = await circuitBreaker.callService(requestOptions);
 
     // if no result try to return cached result
@@ -117,10 +128,21 @@ class SpeakersService {
       if (this.cache[cacheKey]) {
         return this.cache[cacheKey];
       }
+      if (cacheImg) {
+        const exists = await fsexists(cacheImg);
+        if (exists) {
+          return fs.createReadStream(cacheImg);
+        }
+      }
       return false;
     }
 
-    this.cache[cacheKey] = result;
+    if (!cacheImg) {
+      this.cache[cacheKey] = result;
+    } else {
+      const ws = fs.createWriteStream(cacheImg);
+      result.pipe(ws);
+    }
 
     return result;
   }
