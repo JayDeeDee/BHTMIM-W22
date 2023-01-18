@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   development: {
-    sitename: 'Konferenz des Grassi Museums [Development]',
+    sitename: 'Das GRASSI-KOLLEG',
     serviceRegistryUrl: 'http://localhost:3000',
     serviceVersionIdentifier: '1.x.x',
     data: {
@@ -10,7 +10,7 @@ module.exports = {
     },
   },
   production: {
-    sitename: 'Konferenz des Grassi Museums',
+    sitename: 'Das GRASSI-KOLLEG',
     serviceRegistryUrl: 'http://localhost:3000',
     serviceVersionIdentifier: '1.x.x',
     data: {

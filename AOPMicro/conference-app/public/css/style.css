@@ -9,7 +9,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #C1343F;
+  color: #afc428;
 }
 
 p {
@@ -25,7 +25,7 @@ li {
 
 
 a {
-  color: #DD4F53;
+  color: #afc428;
 }
 
 /**  Header Navigation **/
@@ -47,7 +47,7 @@ header .jumbotron {
 /**  Navbar **/
 
 header .navbar {
-  background: #000;
+  background: #fff;
   margin-bottom: 0;
   border-radius: 0;
   font-family: "Roboto", sans-serif;
@@ -64,20 +64,29 @@ header .navbar-default {
   border: 0;
 }
 
+.navbar-header {
+  width: 100%;
+}
+
+p.intro {
+  margin-bottom: 3rem;
+}
 
 header .navbar-brand {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3em;
   font-weight: 300;
+  font-size: 3.333rem;
+  line-height: 130%;
+  border: 4px solid #afc428;
+  color: #afc428;
+  display: inline-block;
+  margin: 1em;
+  padding: 11px 20px 11px 10px;
+  position: relative;
+  z-index: 11;
+  height: auto;
+  min-height: none;
 }
-
-header .navbar-inverse .navbar-brand {
-  color: white;
-}
-
-header .navbar-inverse .navbar-nav>li>a {
-  color: white;
-} 
 
 .maincontent {
   font-family: 'Roboto', sans-serif;
