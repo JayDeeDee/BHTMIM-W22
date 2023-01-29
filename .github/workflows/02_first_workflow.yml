@@ -1,3 +1,5 @@
+# Test action for esa 8
+# prompts a hello world message and two other lines
 name: firstWorkflow
 
 on: push
@@ -8,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: firstStep
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: secondStep
         run: env | sort
   job2:
@@ -16,6 +18,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: firstStep
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: secondStep
         run: "Get-ChildItem Env: | Sort-Object Name"
