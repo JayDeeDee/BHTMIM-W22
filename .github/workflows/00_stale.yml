@@ -3,9 +3,9 @@
 # You can adjust the behavior by modifying this file.
 # For more information, see:
 # https://github.com/actions/stale
-name: Mark stale issues and pull requests
+name: mark stale issues and pull requests
 
-# cron job executed every day at 23:35 
+# cron job executed every day at 23:35
 on:
   schedule:
   - cron: '35 23 * * *'
