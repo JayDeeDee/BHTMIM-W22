@@ -1,4 +1,6 @@
-name: hello
+# Test action for esa 8
+# prompts a hello world message and two other lines
+name: hello world
 
 on: [push]
 
@@ -13,5 +15,5 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        echo this is a test action for github,
+        echo the next ones will be for testing and deploying the project.

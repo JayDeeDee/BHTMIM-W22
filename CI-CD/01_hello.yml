@@ -1,0 +1,19 @@
+# Test action for esa 8
+# prompts a hello world message and two other lines
+name: hello world
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Run a multi-line script
+        run: |
+          echo this is a test action for github,
+          echo the next ones will be for testing and deploying the project.
