@@ -1,4 +1,6 @@
-name: firstWorkflow
+# Test action for esa 8
+# get and show env vars in docker container with ubuntu (job 1) and windows (job 2)
+name: first workflow with env
 
 on: push
 
