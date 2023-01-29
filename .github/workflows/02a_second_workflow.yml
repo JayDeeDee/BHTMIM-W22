@@ -1,0 +1,23 @@
+# Test action for esa 8
+# get and show env vars in docker container with ubuntu (job 1) and windows (job 2)
+name: second workflow with env - added in ide
+
+on: push
+
+jobs:
+  job1:
+    name: firstJob
+    runs-on: ubuntu-latest
+    steps:
+      - name: firstStep
+        uses: actions/checkout@v3
+      - name: secondStep
+        run: env | sort
+  job2:
+    name: secondJob
+    runs-on: windows-latest
+    steps:
+      - name: firstStep
+        uses: actions/checkout@v3
+      - name: secondStep
+        run: "Get-ChildItem Env: | Sort-Object Name"
