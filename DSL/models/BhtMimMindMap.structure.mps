@@ -51,9 +51,15 @@
     <node concept="1TJgyj" id="7$Dlcm$1RoG" role="1TKVEi">
       <property role="IQ2ns" value="8730602560471660076" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="bhtmarker" />
+      <property role="20kJfa" value="marker" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7$Dlcm$1Ghf" resolve="BHTMarker" />
+    </node>
+    <node concept="1TJgyj" id="7$Dlcm$1VbM" role="1TKVEi">
+      <property role="IQ2ns" value="8730602560471675634" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="centralTopic" />
+      <ref role="20lvS9" node="7$Dlcm$1S74" resolve="BHTRootTopic" />
     </node>
   </node>
   <node concept="1TIwiD" id="7$Dlcm$1DqL">
@@ -84,10 +90,45 @@
   </node>
   <node concept="1TIwiD" id="7$Dlcm$1S74">
     <property role="EcuMT" value="8730602560471663044" />
-    <property role="TrG5h" value="BHTMainTopic" />
+    <property role="TrG5h" value="BHTRootTopic" />
     <property role="34LRSv" value="central topic" />
-    <property role="R4oN_" value="main or central topic of the mindmap" />
+    <property role="R4oN_" value="central root topic of the mindmap can have multiple main topics" />
     <ref role="1TJDcQ" node="7$Dlcm$1DqL" resolve="BHTTopic" />
+    <node concept="1TJgyj" id="7$Dlcm$22sq" role="1TKVEi">
+      <property role="IQ2ns" value="8730602560471705370" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="mainTopic" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7$Dlcm$1ZxR" resolve="BHTMainTopic" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7$Dlcm$1ZxR">
+    <property role="EcuMT" value="8730602560471693431" />
+    <property role="TrG5h" value="BHTMainTopic" />
+    <property role="34LRSv" value="main topic" />
+    <property role="R4oN_" value="many main topics can be children of the central root topic" />
+    <ref role="1TJDcQ" node="7$Dlcm$1DqL" resolve="BHTTopic" />
+    <node concept="1TJgyj" id="7$Dlcm$27hi" role="1TKVEi">
+      <property role="IQ2ns" value="8730602560471725138" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="subTopic" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7$Dlcm$23T7" resolve="BHTSubTopic" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7$Dlcm$23T7">
+    <property role="EcuMT" value="8730602560471711303" />
+    <property role="TrG5h" value="BHTSubTopic" />
+    <property role="34LRSv" value="sub topic" />
+    <property role="R4oN_" value="many sub topics can be children of a main topic" />
+    <ref role="1TJDcQ" node="7$Dlcm$1DqL" resolve="BHTTopic" />
+    <node concept="1TJgyj" id="7$Dlcm$27Ve" role="1TKVEi">
+      <property role="IQ2ns" value="8730602560471727822" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="subSubTopic" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7$Dlcm$23T7" resolve="BHTSubTopic" />
+    </node>
   </node>
 </model>
 
