@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="r00x9hfqcy13n2zjuh35fnb3yieoqm" />
+<product version="3" modelHash="5jdkf4fkjkzqraaw6sznu56gt5m1bl3">
+  <files names="BHTMainIdea_Editor.java:BHTMainIdea_EditorBuilder_a.java:BHTMindMap_Editor.java:BHTMindMap_EditorBuilder_a.java:BHTRootIdea_Editor.java:BHTRootIdea_EditorBuilder_a.java:BHTSubIdea_Editor.java:BHTSubIdea_EditorBuilder_a.java:EditorAspectDescriptorImpl.java" />
+</product>
 
