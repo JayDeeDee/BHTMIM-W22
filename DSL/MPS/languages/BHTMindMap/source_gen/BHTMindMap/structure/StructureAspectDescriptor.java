@@ -67,7 +67,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:62804b7b-4c86-48e6-a3e7-10065db00a7d(BHTMindMap.structure)/723388580771702148");
     b.version(3);
-    b.associate("label", 0xa09fe14df7996d7L).target(0xbbb766b466e54907L, 0xa8925f51afe0212dL, 0xa09fe14df792c06L).optional(true).origin("723388580771763927").done();
+    b.associate("label", 0x1143a4b078574f7cL).target(0xbbb766b466e54907L, 0xa8925f51afe0212dL, 0xa09fe14df792c06L).optional(true).origin("1244018999924576124").done();
     b.alias("idea");
     return b.create();
   }

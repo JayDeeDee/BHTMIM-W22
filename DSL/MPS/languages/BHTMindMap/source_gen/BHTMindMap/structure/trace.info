@@ -82,8 +82,8 @@
       <node id="723388580771702148" at="66,33,67,71" concept="0" />
       <node id="723388580771702148" at="67,71,68,96" concept="0" />
       <node id="723388580771702148" at="68,96,69,17" concept="0" />
-      <node id="723388580771763927" at="69,17,70,165" concept="0" />
-      <node id="723388580771702148" at="70,165,71,20" concept="0" />
+      <node id="1244018999924576124" at="69,17,70,167" concept="0" />
+      <node id="723388580771702148" at="70,167,71,20" concept="0" />
       <node id="723388580771702148" at="71,20,72,22" concept="4" />
       <node id="723388580771702148" at="64,0,74,0" concept="7" trace="createDescriptorForBHTIdea#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="723388580771702148" at="42,41,43,32" />

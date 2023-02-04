@@ -90,7 +90,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       editorCell.setDefaultText("<no name>");
       editorCell.setCellId("property_name");
       Style style = new StyleImpl();
-      style.set(StyleAttributes.TEXT_BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_BLUE));
+      style.set(StyleAttributes.TEXT_BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.orange));
       style.set(StyleAttributes.PADDING_LEFT, new Padding(4, Measure.PIXELS));
       style.set(StyleAttributes.PADDING_RIGHT, new Padding(4, Measure.PIXELS));
       editorCell.getStyle().putAll(style);
@@ -124,10 +124,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefCell_0() {
-    final SReferenceLink referenceLink = LINKS.label$PC_e;
+    final SReferenceLink referenceLink = LINKS.label$4AZW;
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
-        EditorCell cell = getUpdateSession().updateReferencedNodeCell(() -> new Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell(), targetNode, LINKS.label$PC_e);
+        EditorCell cell = getUpdateSession().updateReferencedNodeCell(() -> new Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell(), targetNode, LINKS.label$4AZW);
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_nullable_reference(cell);
@@ -140,7 +140,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setSRole(LINKS.label$PC_e);
+      editorCell.setSRole(LINKS.label$4AZW);
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.LinkAttribute$v_);
@@ -290,7 +290,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "}");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "} ");
     editorCell.setCellId("Constant_qvgqup_g0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -307,7 +307,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink label$PC_e = MetaAdapterFactory.getReferenceLink(0xbbb766b466e54907L, 0xa8925f51afe0212dL, 0xa09fe14df78a584L, 0xa09fe14df7996d7L, "label");
+    /*package*/ static final SReferenceLink label$4AZW = MetaAdapterFactory.getReferenceLink(0xbbb766b466e54907L, 0xa8925f51afe0212dL, 0xa09fe14df78a584L, 0x1143a4b078574f7cL, "label");
     /*package*/ static final SContainmentLink subSubIdea$VYdC = MetaAdapterFactory.getContainmentLink(0xbbb766b466e54907L, 0xa8925f51afe0212dL, 0xa09fe14df78f2a1L, 0xa09fe14df79b1dfL, "subSubIdea");
   }
 }

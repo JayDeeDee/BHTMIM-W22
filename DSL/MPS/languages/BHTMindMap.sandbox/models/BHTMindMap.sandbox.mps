@@ -27,9 +27,9 @@
     </language>
   </registry>
   <node concept="3lsnXd" id="C9ZxjvuHEU">
-    <property role="TrG5h" value="dsl mindmap" />
+    <property role="TrG5h" value="Domain Specific Languages" />
     <node concept="3lsizt" id="C9ZxjvuHHp" role="3ls71M">
-      <property role="TrG5h" value="dsl" />
+      <property role="TrG5h" value="DSL" />
       <node concept="3lsf5P" id="C9ZxjvuHHr" role="3ls5LT">
         <property role="TrG5h" value="definition" />
         <node concept="3lsgMP" id="C9ZxjvuHHt" role="3ls4ud">
@@ -45,7 +45,7 @@
       <node concept="3lsf5P" id="C9ZxjvuHHA" role="3ls5LT">
         <property role="TrG5h" value="categories" />
         <node concept="3lsgMP" id="C9ZxjvuHHG" role="3ls4ud">
-          <property role="TrG5h" value="internal dsl bhtmarker" />
+          <property role="TrG5h" value="internal dsl" />
           <node concept="3lsgMP" id="C9ZxjvuHHI" role="3ls4Zb">
             <property role="TrG5h" value="has grammar" />
           </node>
@@ -79,9 +79,9 @@
         </node>
       </node>
       <node concept="3lsf5P" id="C9ZxjvuHIr" role="3ls5LT">
-        <property role="TrG5h" value="tools bhtmarker " />
+        <property role="TrG5h" value="tools " />
         <node concept="3lsgMP" id="C9ZxjvuHIH" role="3ls4ud">
-          <property role="TrG5h" value="xText bhtmarker " />
+          <property role="TrG5h" value="xText " />
         </node>
         <node concept="3lsgMP" id="C9ZxjvuHJl" role="3ls4ud">
           <property role="TrG5h" value="MPS" />
@@ -105,7 +105,7 @@
           <property role="TrG5h" value="programmer productivity " />
         </node>
         <node concept="3lsgMP" id="C9ZxjvuHKh" role="3ls4ud">
-          <property role="TrG5h" value="express behaviour in a natural way to the domain " />
+          <property role="TrG5h" value="express behaviour in a natural way to the domain" />
         </node>
       </node>
       <node concept="3lsf5P" id="C9ZxjvuHKk" role="3ls5LT">
@@ -114,10 +114,10 @@
           <property role="TrG5h" value="cost of building dsl " />
         </node>
         <node concept="3lsgMP" id="C9ZxjvuHKM" role="3ls4ud">
-          <property role="TrG5h" value="migration problem when business evolves and requires modified dsl " />
+          <property role="TrG5h" value="migration problem when business evolves and requires modified dsl" />
         </node>
         <node concept="3lsgMP" id="C9ZxjvuHKP" role="3ls4ud">
-          <property role="TrG5h" value="understanding dsl - what is a good dsl " />
+          <property role="TrG5h" value="understanding dsl - what is a good dsl" />
         </node>
       </node>
       <node concept="3lsf5P" id="C9ZxjvuHKT" role="3ls5LT">
@@ -126,19 +126,19 @@
           <property role="TrG5h" value="build dsl" />
         </node>
         <node concept="3lsgMP" id="C9ZxjvuHLr" role="3ls4ud">
-          <property role="TrG5h" value="evolve dsl " />
+          <property role="TrG5h" value="evolve dsl" />
           <node concept="3lsgMP" id="C9ZxjvuHLu" role="3ls4Zb">
-            <property role="TrG5h" value="how do we migrate build system " />
+            <property role="TrG5h" value="how do we migrate build system" />
           </node>
         </node>
         <node concept="3lsgMP" id="C9ZxjvuHLw" role="3ls4ud">
-          <property role="TrG5h" value="impact on build system " />
+          <property role="TrG5h" value="impact on build system" />
         </node>
         <node concept="3lsgMP" id="C9ZxjvuHL_" role="3ls4ud">
-          <property role="TrG5h" value="language parser " />
+          <property role="TrG5h" value="language parser" />
         </node>
         <node concept="3lsgMP" id="C9ZxjvuHLF" role="3ls4ud">
-          <property role="TrG5h" value="testing " />
+          <property role="TrG5h" value="testing" />
         </node>
       </node>
       <node concept="3lsf5P" id="C9ZxjvuHLM" role="3ls5LT">

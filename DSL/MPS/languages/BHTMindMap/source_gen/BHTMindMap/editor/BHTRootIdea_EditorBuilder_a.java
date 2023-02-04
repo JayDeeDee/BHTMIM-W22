@@ -115,10 +115,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefCell_0() {
-    final SReferenceLink referenceLink = LINKS.label$PC_e;
+    final SReferenceLink referenceLink = LINKS.label$4AZW;
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
-        EditorCell cell = getUpdateSession().updateReferencedNodeCell(() -> new Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell(), targetNode, LINKS.label$PC_e);
+        EditorCell cell = getUpdateSession().updateReferencedNodeCell(() -> new Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell(), targetNode, LINKS.label$4AZW);
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_nullable_reference(cell);
@@ -131,7 +131,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setSRole(LINKS.label$PC_e);
+      editorCell.setSRole(LINKS.label$4AZW);
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.LinkAttribute$v_);
@@ -298,7 +298,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink label$PC_e = MetaAdapterFactory.getReferenceLink(0xbbb766b466e54907L, 0xa8925f51afe0212dL, 0xa09fe14df78a584L, 0xa09fe14df7996d7L, "label");
+    /*package*/ static final SReferenceLink label$4AZW = MetaAdapterFactory.getReferenceLink(0xbbb766b466e54907L, 0xa8925f51afe0212dL, 0xa09fe14df78a584L, 0x1143a4b078574f7cL, "label");
     /*package*/ static final SContainmentLink mainIdea$Juf3 = MetaAdapterFactory.getContainmentLink(0xbbb766b466e54907L, 0xa8925f51afe0212dL, 0xa09fe14df78d6c9L, 0xa09fe14df79a26dL, "mainIdea");
   }
 }
